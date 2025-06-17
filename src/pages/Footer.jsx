@@ -1,59 +1,93 @@
 import React from "react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
-
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaXTwitter,
+} from "react-icons/fa6";
+import FloatingCTAButton from './FloatingCTAButton';
 
 export default function Footer() {
   return (
-    <><p></p></>
+    <footer className="bg-blue-900 text-white px-6 py-12">
+      <FloatingCTAButton/>
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+        {/* Brand Section */}
+        <div>
+          <h2 className="text-2xl font-bold flex items-center gap-2">
+            <span className="bg-orange-400 text-black px-2 py-1 rounded">W</span>{" "}
+            KRISHIKA
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed">
+            We provide tailored solutions in aluminum, glazing, steel, and more.
+            Let us build your dream — with strength, style, and precision.
+          </p>
+          <div className="flex gap-4 mt-5 text-xl text-white">
+            <a href="#" className="hover:text-orange-400 transition">
+              <FaFacebookF />
+            </a>
+            <a href="#" className="hover:text-orange-400 transition">
+              <FaInstagram />
+            </a>
+            <a href="#" className="hover:text-orange-400 transition">
+              <FaXTwitter />
+            </a>
+            <a href="#" className="hover:text-orange-400 transition">
+              <FaLinkedinIn />
+            </a>
+          </div>
+        </div>
 
+        {/* Company Links */}
+        <div>
+          <h3 className="font-semibold text-lg mb-3 border-b border-white/20 pb-1">
+            Company
+          </h3>
+          <ul className="space-y-2 text-sm text-white/80">
+            <li className="hover:text-white cursor-pointer">About Us</li>
+            <li className="hover:text-white cursor-pointer">Our Team</li>
+            <li className="hover:text-white cursor-pointer">Partners</li>
+            <li className="hover:text-white cursor-pointer">For Clients</li>
+            <li className="hover:text-white cursor-pointer">Contact</li>
+          </ul>
+        </div>
 
-    // <footer className="bg-blue-900 text-white px-6 py-10">
-    //   <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-    //     <div>
-    //       <h2 className="text-xl font-bold flex items-center gap-2">
-    //         <span className="bg-orange-400 text-black px-2 py-1 rounded">W</span> KRISHIKA
-    //       </h2>
-    //       <p className="mt-2 text-sm">
-    //         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-    //       </p>
-    //       <div className="flex gap-4 mt-4 text-xl">
-    //         <FaFacebookF />
-    //         <FaInstagram />
-    //         <FaXTwitter />
-    //         <FaLinkedinIn />
-    //       </div>
-    //     </div>
+        {/* Services */}
+        <div>
+          <h3 className="font-semibold text-lg mb-3 border-b border-white/20 pb-1">
+            Services
+          </h3>
+          <ul className="space-y-2 text-sm text-white/80">
+            <li className="hover:text-white cursor-pointer">Aluminum Fabrication</li>
+            <li className="hover:text-white cursor-pointer">Glass Glazing</li>
+            <li className="hover:text-white cursor-pointer">Steel Railings</li>
+            <li className="hover:text-white cursor-pointer">Partitions & Cabins</li>
+            <li className="hover:text-white cursor-pointer">Custom Projects</li>
+          </ul>
+        </div>
 
-    //     <div>
-    //       <h3 className="font-semibold text-lg mb-2">Company</h3>
-    //       <ul className="space-y-1 text-sm">
-    //         <li>About Us</li>
-    //         <li>Our Team</li>
-    //         <li>Partners</li>
-    //         <li>For Candidates</li>
-    //         <li>For Employers</li>
-    //       </ul>
-    //     </div>
+        {/* Newsletter */}
+        <div>
+          <h3 className="font-semibold text-lg mb-3 border-b border-white/20 pb-1">
+            Newsletter
+          </h3>
+          <p className="text-sm text-white/70 mb-3">
+            Stay updated with our latest services and offers.
+          </p>
+          <input
+            type="email"
+            className="p-2 rounded text-black w-full mb-3 focus:outline-none"
+            placeholder="Email Address"
+          />
+          <button className="bg-yellow-400 text-black py-2 px-4 rounded hover:bg-yellow-300 w-full font-medium transition-all">
+            Subscribe Now
+          </button>
+        </div>
+      </div>
 
-    //     <div>
-    //       <h3 className="font-semibold text-lg mb-2">Job Categories</h3>
-    //       <ul className="space-y-1 text-sm">
-    //         <li>Telecomunications</li>
-    //         <li>Hotels & Tourism</li>
-    //         <li>Construction</li>
-    //         <li>Education</li>
-    //         <li>Financial Services</li>
-    //       </ul>
-    //     </div>
-
-    //     <div>
-    //       <h3 className="font-semibold text-lg mb-2">Newsletter</h3>
-    //       <p className="text-sm mb-2">Eu nunc pretium vitae platea. Non netus elementum vulputate</p>
-    //       <input type="email" className="p-2 rounded text-black w-full mb-2" placeholder="Email Address" />
-    //       <button className="bg-yellow-400 text-black py-2 px-4 rounded hover:bg-yellow-300 w-full">Subscribe now</button>
-    //     </div>
-    //   </div>
-      
-    // </footer>
+      <div className="mt-10 text-center text-sm text-white/60">
+        © {new Date().getFullYear()} Krishika Fab — All rights reserved.
+      </div>
+    </footer>
   );
 }
