@@ -19,13 +19,11 @@ const Services = () => {
             glass partitions, and steel railings. Our team delivers functional, stylish, and durable fabrication tailored
             for homes, offices, and commercial buildings.
           </p>
-          <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-medium py-3 px-6">
-            DISCOVER MORE
-          </button>
+         
         </div>
       </div>
 
-      <WhatWeOffer />
+      
     </section>
   );
 };

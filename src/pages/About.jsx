@@ -71,9 +71,14 @@ const About = () => {
             we deliver durable, modern, and aesthetic fabrication solutions using premium materials
             like Jindal and Hindalco.
           </p>
-          <button className="bg-yellow-400 text-black font-bold px-6 py-3 rounded hover:bg-yellow-500 transition duration-300">
-            BOOK A FREE SITE VISIT
-          </button>
+         <button
+  onClick={() => {
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+  }}
+  className="bg-yellow-400 text-black font-bold px-6 py-3 rounded hover:bg-yellow-500 transition duration-300"
+>
+  BOOK A FREE SITE VISIT
+</button>
         </div>
       </div>
 

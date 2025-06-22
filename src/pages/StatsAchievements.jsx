@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaBriefcase, FaSmile, FaUsers } from "react-icons/fa";
+import { FaBriefcase, FaSmile, FaUsers,FaAward } from "react-icons/fa";
 import ProjectGallery from './ProjectGallery';
 
 const stats = [
@@ -21,7 +21,14 @@ const stats = [
     value: 20,
     suffix: "+",
   },
+  {
+    icon: <FaAward size={30} className="text-indigo-600" />,
+    label: "Years of Experience",
+    value: 20,
+    suffix: "+",
+  },
 ];
+
 
 const StatCard = ({ icon, label, value, suffix }) => {
   const [count, setCount] = useState(0);
@@ -42,7 +49,7 @@ const StatCard = ({ icon, label, value, suffix }) => {
   }, [value]);
 
   return (
-    <div className="bg-white shadow-lg rounded-xl p-6 text-center">
+    <div className="bg-white shadow-lg rounded-xl p-6 py-20 text-center">
       <div className="flex justify-center mb-3">{icon}</div>
       <h3 className="text-3xl font-bold text-indigo-700">
         {count}
@@ -62,7 +69,7 @@ const StatsAchievements = () => {
           We take pride in our dedication, quality, and consistent delivery. Here's a quick snapshot of our success.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-8">
           {stats.map((item, index) => (
             <StatCard
               key={index}
@@ -74,7 +81,7 @@ const StatsAchievements = () => {
           ))}
         </div>
       </div>
-      <ProjectGallery/>
+      
     </section>
   );
 };

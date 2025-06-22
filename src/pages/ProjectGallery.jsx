@@ -7,21 +7,21 @@ const projectData = [
     id: 1,
     title: "Modern Glass Facade",
     category: "Glass Glazing",
-    image: "/projects/glass1.jpg",
+    image: "/src/assets/door.webp",
     description: "Full glass front elevation for a commercial complex."
   },
   {
     id: 2,
     title: "Stainless Steel Railing",
     category: "Railings",
-    image: "/projects/railing1.jpg",
+    image: "/src/assets/railling.jpeg",
     description: "Custom-designed railing for a residential staircase."
   },
   {
     id: 3,
     title: "Sliding Aluminum Windows",
     category: "Aluminum Work",
-    image: "/projects/aluminum1.jpg",
+    image: "/src/assets/window.jpeg",
     description: "Durable and sleek sliding windows for a home project."
   },
   // Add more projects as needed
@@ -39,7 +39,7 @@ const ProjectGallery = () => {
       : projectData.filter(p => p.category === selectedCategory);
 
   return (
-    <section id="portfolio" className="bg-white py-20 px-6">
+    <section id="ProjectGallery" className="bg-white py-20 px-6">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-4">Project Gallery</h2>
         <p className="text-center text-gray-600 mb-10">
@@ -76,7 +76,7 @@ const ProjectGallery = () => {
                 alt={project.title}
                 className="rounded-lg w-full h-64 object-cover shadow-md group-hover:scale-105 transition-transform duration-300"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-center items-center text-white rounded-lg">
+              <div className="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-center items-center text-black rounded-lg">
                 <FaSearchPlus size={24} />
                 <p className="mt-2 font-semibold">View Details</p>
               </div>
@@ -103,17 +103,20 @@ const ProjectGallery = () => {
               <p className="text-gray-600 text-sm mb-4">{selectedProject.category}</p>
               <p className="text-gray-800 text-sm">{selectedProject.description}</p>
               <button
-                className="absolute top-2 right-2 text-gray-500 hover:text-black"
+                className="absolute top-1 right-2 text-black font-bold cursor-pointe
+                 hover:text-black"
                 onClick={() => setSelectedProject(null)}
               >
-                ✕
+                BACK
               </button>
+
+
             </div>
           </div>
         )}
       </div>
 
-      <IndustriesWeServe/>
+    
     </section>
   );
 };

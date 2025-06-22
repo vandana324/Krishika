@@ -27,6 +27,7 @@ const reasons = [
 
 const WhyChooseUs = () => {
   return (
+    <section id="about">
     <section className="py-20 bg-white px-6 md:px-16">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
@@ -36,7 +37,7 @@ const WhyChooseUs = () => {
           We don’t just build structures, we build trust through consistent performance, high quality, and professional service.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 pb-15">
           {reasons.map((item, index) => (
             <div key={index} className="flex flex-col items-center text-center">
               <div className="mb-4">{item.icon}</div>
@@ -47,8 +48,8 @@ const WhyChooseUs = () => {
         </div>
       </div>
       
-      <ClientTestimonials/>
-    </section>
+     
+    </section></section>
   );
 };
 

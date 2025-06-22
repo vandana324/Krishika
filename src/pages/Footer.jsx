@@ -44,11 +44,14 @@ export default function Footer() {
             Company
           </h3>
           <ul className="space-y-2 text-sm text-white/80">
-            <li className="hover:text-white cursor-pointer">About Us</li>
-            <li className="hover:text-white cursor-pointer">Our Team</li>
-            <li className="hover:text-white cursor-pointer">Partners</li>
-            <li className="hover:text-white cursor-pointer">For Clients</li>
-            <li className="hover:text-white cursor-pointer">Contact</li>
+          <li><a href="#home" className="hover:text-white cursor-pointer">{'\u203A'}      Home </a></li>
+          <li><a href="#about" className="hover:text-white cursor-pointer">{'\u203A'}       About us </a></li>
+          <li><a href="#services" className="hover:text-white cursor-pointer">{'\u203A'}   Serives </a></li>
+          <li><a href="#contact" className="hover:text-white cursor-pointer">{'\u203A'}     Contact</a></li>
+          <li><a href="#WhyChooseUs" className="hover:text-white cursor-pointer">{'\u203A'} For Client</a></li>
+          
+         
+           
           </ul>
         </div>
 
@@ -58,11 +61,11 @@ export default function Footer() {
             Services
           </h3>
           <ul className="space-y-2 text-sm text-white/80">
-            <li className="hover:text-white cursor-pointer">Aluminum Fabrication</li>
-            <li className="hover:text-white cursor-pointer">Glass Glazing</li>
-            <li className="hover:text-white cursor-pointer">Steel Railings</li>
-            <li className="hover:text-white cursor-pointer">Partitions & Cabins</li>
-            <li className="hover:text-white cursor-pointer">Custom Projects</li>
+            <li ><a href="#ProjectGallery" className="hover:text-white cursor-pointer">Aluminum Fabrication </a></li>
+            <li ><a href="#ProjectGallery" className="hover:text-white cursor-pointer">Glass Glazing</a></li>
+            <li ><a href="#ProjectGallery" className="hover:text-white cursor-pointer">Steel Railings</a></li>
+            <li ><a href="#ProjectGallery" className="hover:text-white cursor-pointer">Partitions & Cabins</a></li>
+            <li ><a href="#ProjectGallery" className="hover:text-white cursor-pointer">Custom Projects</a></li>
           </ul>
         </div>
 

@@ -31,7 +31,7 @@ const testimonials = [
 
 const ClientTestimonials = () => {
   return (
-    <section className="bg-gradient-to-r from-indigo-900 to-blue-800 text-white py-20 px-6 md:px-20">
+    <section className="bg-gradient-to-r from-indigo-900 to-blue-800 text-white py-25 px-2 sm:px-6">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
           What Our Clients Say
@@ -40,7 +40,7 @@ const ClientTestimonials = () => {
           Real stories from happy clients who trusted us with their fabrication needs.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-20">
           {testimonials.map((item, index) => (
             <div
               key={index}
@@ -69,7 +69,7 @@ const ClientTestimonials = () => {
         </div>
       </div>
 
-      <StatsAchievements/>
+     
     </section>
   );
 };
