@@ -13,6 +13,7 @@ import IndustriesWeServe from "./pages/IndustriesWeServe";
 import StatsAchievements from "./pages/StatsAchievements";
 import FloatingCTAButton from "./pages/FloatingCTAButton";
 import BlogKnowledgeCenter from "./pages/BlogKnowledgeCenter";
+import OurProjects from "./pages/OurProjects";
 
 export default function App() {
   return (
@@ -20,11 +21,13 @@ export default function App() {
       <Navbar />
       
       <div id="home"><Home /></div>
+      <WhatWeOffer />
+      <OurProjects />
       <div id="about"><About /></div>
       <div id="services"><Services /></div>
 
       {/* Below sections will be visible on scroll, not linked in Navbar */}
-      <WhatWeOffer />
+      
       <WhyChooseUs />
       <ClientTestimonials />
       

@@ -1,27 +1,30 @@
 import React, { useState } from "react";
 import { FaSearchPlus } from "react-icons/fa";
 import IndustriesWeServe from './IndustriesWeServe';
+import image1 from "../photos/new5.jpg"
+import image2 from "../photos/new3.jpg"
+import image3 from "../photos/new4.jpg"
 
 const projectData = [
   {
     id: 1,
     title: "Modern Glass Facade",
     category: "Glass Glazing",
-    image: "/src/assets/door.webp",
+    image: image1,
     description: "Full glass front elevation for a commercial complex."
   },
   {
     id: 2,
     title: "Stainless Steel Railing",
     category: "Railings",
-    image: "/src/assets/railling.jpeg",
+    image: image2,
     description: "Custom-designed railing for a residential staircase."
   },
   {
     id: 3,
     title: "Sliding Aluminum Windows",
     category: "Aluminum Work",
-    image: "/src/assets/window.jpeg",
+    image: image3,
     description: "Durable and sleek sliding windows for a home project."
   },
   // Add more projects as needed

@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import railing1 from "/src/assets/railling1.webp";
+import metal2 from "/src/assets/metal2.jpg";
+import window3 from "/src/assets/window3.jpeg";
 
 const blogPosts = [
   {
@@ -20,7 +23,7 @@ const blogPosts = [
       <br/><br/>
       <em>A well-chosen railing adds architectural character and ensures safety without compromise.</em>
     `,
-    image: "/src/assets/railling1.webp",
+    image: railing1,
     date: "June 1, 2025",
   },
   {
@@ -41,7 +44,7 @@ const blogPosts = [
       <br/><br/>
       <em>As innovation continues, metal fabrication is poised to lead the future of smart and green infrastructure.</em>
     `,
-    image: "/src/assets/metal2.jpg",
+    image: metal2,
     date: "May 20, 2025",
   },
   {
@@ -62,7 +65,7 @@ const blogPosts = [
       <br/><br/>
       <em>From high-rises to villas, aluminum windows combine form and function in the most elegant way.</em>
     `,
-    image: "/src/assets/window3.jpeg",
+    image: window3,
     date: "May 5, 2025",
   },
 ];

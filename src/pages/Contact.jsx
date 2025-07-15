@@ -2,6 +2,10 @@ import React, { useRef } from "react";
 import { Phone, Mail, Clock, MapPin } from "lucide-react";
 import emailjs from "emailjs-com";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 const Contact = () => {
   const form = useRef();
 
@@ -10,27 +14,30 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'service_6sbjhds',      // 🔁 Replace with your actual EmailJS service ID
-        'template_cmgp9a9',     // 🔁 Replace with your actual EmailJS template ID
+        'service_8ulspkk',      // 🔁 Replace with your actual EmailJS service ID
+        'template_h4tdyhf',     // 🔁 Replace with your actual EmailJS template ID
         form.current,
-        'AuuiQAXPgWMXLUGCh'       // 🔁 Replace with your actual EmailJS public key
+        '96ENuN6VXfGlU7Lx7'       // 🔁 Replace with your actual EmailJS public key
       )
       .then(
         () => {
-          alert("✅ Message sent successfully!");
+         toast.success("✅ Message sent successfully!");
           form.current.reset();
         },
         (error) => {
           console.error(error.text);
-          alert("❌ Failed to send message. Please try again.");
+          toast.error("❌ Failed to send message. Please try again.");
         }
       );
   };
 
   return (
+    <>
+    <ToastContainer position="top-right" autoClose={3000} />
     <section id="contact" className="bg-gradient-to-b from-white via-gray-50 to-white py-20 px-6">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         {/* Left Side Info */}
+        
         <div>
           <h2 className="text-4xl font-bold mb-6 text-gray-900">
             Let’s <span className="text-indigo-600">Build Something Strong</span> Together
@@ -129,7 +136,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </section>
+    </section></>
   );
 };
 
